@@ -129,9 +129,9 @@ void MudaModo(int idModo,int inicia){
     CObjeto::DefineFrame(frames[frameAtual]);
 }
 
-//desenha a animaï¿½ï¿½o
+//desenha a animação
 int Desenha(){
-    int resp=0; //0 indica que que o modo de animaï¿½ï¿½o atual nï¿½o terminou
+    int resp=0; //0 indica que que o modo de animação atual não terminou
     Modo *modo = modos[modoAtual];
     float tempo = modo->delays[frameDoModo];
     float tempoDecorrido;
@@ -174,5 +174,5 @@ int Desenha(){
 
 };
 
-typedef CAnimacao* Animacao;
 
+typedef CAnimacao* Animacao;

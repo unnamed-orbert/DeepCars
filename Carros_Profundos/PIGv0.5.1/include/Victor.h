@@ -1,7 +1,7 @@
 
 /********************************
-A funï¿½ï¿½o AnguloEquivalente recebe um angulo qualquer e te retorna o equivalente positivo (de 0 a 360)
-Exemplo: AnguloEquivalente(720) retorna 0 pois 720 graus ï¿½ equivalente a 0 graus no circulo trigonometrico;
+A função AnguloEquivalente recebe um angulo qualquer e te retorna o equivalente positivo (de 0 a 360)
+Exemplo: AnguloEquivalente(720) retorna 0 pois 720 graus é equivalente a 0 graus no circulo trigonometrico;
 ********************************/
 
 double AnguloEquivalente(double angulo)
@@ -17,9 +17,9 @@ double AnguloEquivalente(double angulo)
 }
 
 /********************************
-A funï¿½ï¿½o AnguloEntrePontos retorna o angulo entre dois pontos.
+A função AnguloEntrePontos retorna o angulo entre dois pontos.
 Exemplo: Se o segmento de reta que une os 2 pontos for paralelo ao eixo X
-o valor retornado serï¿½ 0 ou 180, dependendo da ordem dos pontos na passagem dos parametros.
+o valor retornado será 0 ou 180, dependendo da ordem dos pontos na passagem dos parametros.
 ********************************/
 
 double AnguloEntrePontos(double X1, double Y1, double X2, double Y2)
@@ -40,7 +40,7 @@ double AnguloEntrePontos(double X1, double Y1, double X2, double Y2)
 }
 
 /********************************
-A funï¿½ï¿½o DistanciaEntrePontos retorna a distancia entre 2 pontos
+A função DistanciaEntrePontos retorna a distancia entre 2 pontos
 ********************************/
 
 double DistanciaEntrePontos(double X1, double Y1, double X2, double Y2)
@@ -49,8 +49,8 @@ double DistanciaEntrePontos(double X1, double Y1, double X2, double Y2)
 }
 
 /********************************
-A funï¿½ï¿½o NumeroAleatorio retorna um numero aleatorio com os intervalos incluidos,
-ou seja, os valores "Minimo" e "Maximo" tambï¿½m sï¿½o possï¿½veis de se obter.
+A função NumeroAleatorio retorna um numero aleatorio com os intervalos incluidos,
+ou seja, os valores "Minimo" e "Maximo" também são possíveis de se obter.
 ********************************/
 
 int NumeroAleatorio(int Minimo, int Maximo)
@@ -58,6 +58,7 @@ int NumeroAleatorio(int Minimo, int Maximo)
     Maximo = Maximo + 1;
     return (rand() % (Maximo-Minimo)) + Minimo;
 }
+
 
 void RodarXY(double *X, double* Y)
 {
@@ -205,4 +206,6 @@ void XeYRealParaVirtual(double* X, double* Y)
     *X = CamX + D*cos(M_Radi*(A+CameraRotationXY));
     *Y = CamY + D*sin(M_Radi*(A+CameraRotationXY));
 }
+
+
 

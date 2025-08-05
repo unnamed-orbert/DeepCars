@@ -211,4 +211,5 @@ int ForcaClass::GetForca(int Objeto, int Direcao)
     }
 }
 
+
 #endif // FORCACLASS_H
